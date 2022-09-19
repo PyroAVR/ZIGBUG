@@ -1,0 +1,3 @@
+option('ihex', type: 'feature', value: 'false', decsription: 'Intel Hex input')
+option('memdump', type: 'feature', value: 'false', description: 'Memory Dump')
+option('ports', type: 'array', value: ['posix'], description: 'Ports to build')
