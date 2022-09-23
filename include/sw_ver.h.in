@@ -1,0 +1,4 @@
+#if !defined(__SW_VER_H__)
+#define __SW_VER_H__
+#define GIT_HASH "@VCS_TAG@"
+#endif

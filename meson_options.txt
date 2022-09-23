@@ -1,3 +1,13 @@
-option('ihex', type: 'feature', value: 'false', decsription: 'Intel Hex input')
-option('memdump', type: 'feature', value: 'false', description: 'Memory Dump')
+option('ihex', type: 'feature', value: 'disabled', description: 'Intel Hex input')
+option('memdump', type: 'feature', value: 'disabled', description: 'Memory Dump')
 option('ports', type: 'array', value: ['posix'], description: 'Ports to build')
+
+# Port options
+
+# POSIX application space simulator
+option(
+    'posix_mem_size',
+    type: 'integer',
+    value: 256000,
+    description: 'size of virtual memory'
+)
