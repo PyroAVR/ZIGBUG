@@ -39,9 +39,10 @@ if get_option('memdump').enabled()
     #do stuff
 endif
 
-includes = ['include']
+includes = [include_directories('include')]
 
 subdir('src' / 'common')
+subdir('src' / 'utils')
 
 includes += 'includes' in common ? common['includes'] : []
 
@@ -57,6 +58,7 @@ foreach port:get_option('ports')
             common['sources'],
         ],
         c_args: defs,
-        include_directories: [inc, includes]
+        include_directories: [inc, includes],
+        link_with: [string_lib],
     )
 endforeach

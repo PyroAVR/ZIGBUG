@@ -6,3 +6,5 @@
 #else
 #define WEAK
 #endif
+
+#endif
