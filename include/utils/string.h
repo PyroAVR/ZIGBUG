@@ -14,6 +14,8 @@ char iscrlf(char c);
 
 char iswhitespace(char c);
 
+int hex2nibble(char c);
+
 // FIXME not a great interface here
 void int2hex(char *buf, char byte);
 uintmax_t hex2int(char *buf, size_t len);
