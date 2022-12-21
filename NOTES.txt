@@ -1,0 +1,8 @@
+Will the dump interface be able to choose between ihex and srec?
+    - perhaps make this a compile time option.
+
+goals:
+ - minimal data segment, ideally none
+ - build-time configurable RAM or ROM linking via selectable ldscript
+   - retargetable addresses at build time (for tacking on to an existing binary)
+ - fully port-overridable functions (to allow for hand-assembler optimizaiton)
